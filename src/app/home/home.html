@@ -1,4 +1,5 @@
-<div class="intro">
-  <h1>Hello<br>World</h1>
-  <p>{{ lead }}</p>
-</div>
+<h1>Pomodoro</h1>
+<p>Pomodori: <span ng-bind="pomodoriCount"></span></p>
+<button class="btn btn-default" ng-click="pomodoro()" ng-bind="currentAction"></button>
+
+<div id="timer" ng-bind="currentTime | time"></div>

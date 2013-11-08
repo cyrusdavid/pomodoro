@@ -8,4 +8,10 @@ angular.module('myApp', [
   $routeProvider.otherwise({
     redirectTo: '/'
   });
+})
+
+.run(function($rootScope) {
+  $rootScope.$on("$routeChangeSuccess", function(event, currentRoute, previousRoute) {
+      $rootScope.title = currentRoute.title;
+  });
 });

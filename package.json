@@ -28,7 +28,8 @@
   },
   "vendorFiles": [
     "vendor/angular/angular.min.js",
-    "vendor/angular-route/angular-route.min.js"
+    "vendor/angular-route/angular-route.min.js",
+    "vendor/moment/min/moment.min.js"
   ],
   "testFiles": [
     "vendor/angular-mocks/angular-mocks.js"

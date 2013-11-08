@@ -25,22 +25,14 @@ module.exports = function (grunt) {
       // TODO: only copy changed files
       tests: {
         files: ['src/app/**/*.js'],
-        tasks: ['copy:dev', 'karma:unit:run', 'notify:watch'],
+        options: {
+          livereload: true
+        }
       },
       // TODO: only copy changed files
       templates: {
         files: ['src/app/**/*.html'],
         tasks: ['html2js', 'copy:dev', 'notify:watch'],
-      },
-      // will refresh browser
-      changes: {
-        files: [
-          'build/app/**/*'
-        ],
-        tasks: 'notify:watch',
-        options: {
-          livereload: true
-        }
       },
       // will not refresh browser
       less: {
