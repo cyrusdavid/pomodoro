@@ -1,0 +1,26 @@
+@import "/vendor/bootstrap/less/bootstrap";
+
+body, html {
+    height: 100%;
+}
+
+body {
+    background: url('../img/bg.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.intro {
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .45);
+
+    & > h1 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 100px;
+        line-height: 1em;
+    }
+
+    & > p {
+        font-size: 20px;
+    }
+}

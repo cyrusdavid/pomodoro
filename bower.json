@@ -1,0 +1,13 @@
+{
+  "name": "transmission-webui",
+  "devDependencies": {
+    "angular": "~1.2.0",
+    "angular-route": "~1.2.0-rc.3",
+    "angular-mocks": "~1.0.8",
+    "bootstrap": "~3.0.2"
+  },
+  "dependencies": {},
+  "resolutions": {
+    "angular": "1.2.0-rc.3"
+  }
+}

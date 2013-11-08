@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>Hello World</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div ng-view></div>
+  </div>
+
+  <% scripts.forEach( function(file) { %>
+  <script type="text/javascript" src="<%= file %>"></script><% }); %>
+</body>
+</html>

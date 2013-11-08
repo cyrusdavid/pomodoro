@@ -1,0 +1,36 @@
+{
+  "devDependencies": {
+    "grunt-notify": "git://github.com/vohof/grunt-notify.git#patch/01-ttl",
+    "grunt-contrib-watch": "git://github.com/gruntjs/grunt-contrib-watch.git",
+    "grunt": "~0.4.1",
+    "grunt-bg-shell": "~2.3.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.5",
+    "grunt-contrib-jshint": "~0.7.1",
+    "karma-script-launcher": "~0.1.0",
+    "karma-chrome-launcher": "~0.1.0",
+    "karma-firefox-launcher": "~0.1.0",
+    "karma-html2js-preprocessor": "~0.1.0",
+    "karma-jasmine": "~0.1.3",
+    "karma-requirejs": "~0.1.0",
+    "karma-coffee-preprocessor": "~0.1.0",
+    "karma-phantomjs-launcher": "~0.1.0",
+    "karma": "~0.10.4",
+    "grunt-karma": "~0.6.2",
+    "grunt-contrib-less": "~0.8.1",
+    "grunt-html2js": "~0.1.8",
+    "karma-spec-reporter": "0.0.6",
+    "lodash": "~2.2.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-html2js": "~0.1.8",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-ngmin": "0.0.3"
+  },
+  "vendorFiles": [
+    "vendor/angular/angular.min.js",
+    "vendor/angular-route/angular-route.min.js"
+  ],
+  "testFiles": [
+    "vendor/angular-mocks/angular-mocks.js"
+  ]
+}
