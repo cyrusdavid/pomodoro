@@ -3,7 +3,7 @@ angular.module('myApp.Home', [
   'time'
 ])
 
-.config(function($routeProvider) {
+.config(function ($routeProvider) {
   $routeProvider
     .when('/', {
       controller: 'HomeCtrl',
@@ -12,7 +12,7 @@ angular.module('myApp.Home', [
     });
 })
 
-.factory('player', function($document) {
+.factory('player', function ($document) {
   var player = $document[0].createElement('audio');
 
   player.src = '/audio/ringing.mp3';
@@ -21,16 +21,16 @@ angular.module('myApp.Home', [
   return player;
 })
 
-.controller('HomeCtrl', function($rootScope, $scope, $interval, player) {
+.controller('HomeCtrl', function ($rootScope, $scope, $interval, player) {
   $scope.pomodoriCount = 0;
   $scope.currentTime = 1500000;
   $scope.currentAction = 'Start';
 
   $scope.$watch(
-    function() {
+    function () {
       return $scope.currentTime;
     },
-    function(newVal, oldVal) {
+    function (newVal, oldVal) {
       if (newVal !== oldVal &&
         (newVal === 0 || // 25-minute timer is up
           (newVal === 300000 && $scope.pomodoriCount !== 4) || // short break is up
@@ -58,8 +58,8 @@ angular.module('myApp.Home', [
 
   $scope.pomodoroBreak = function doBreak() {
     $scope.currentTime = 0;
-    var breakLength = $scope.pomodoriCount === 4 ? 1800000 : 300000;
-    var interval = $interval(function tick() {
+    var breakLength = $scope.pomodoriCount === 4 ? 1800000 : 300000,
+        interval = $interval(function tick() {
       $scope.currentTime += 1000;
       if ($scope.currentTime === breakLength) {
         $interval.cancel(interval);

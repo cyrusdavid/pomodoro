@@ -118,6 +118,7 @@ module.exports = function (grunt) {
 
     html2js: {
       options: {
+        quoteChar: '\'',
         module: 'myApp.templates'
       },
       main: {

@@ -1,10 +1,8 @@
 describe('myApp.Home', function() {
-
-  var scope, HomeCtrl, interval, player;
-
-  player = {
-    play: function(){}
-  };
+  var player = {
+      play: function () {}
+    },
+    scope, HomeCtrl, interval;
 
   beforeEach(module('myApp.Home'));
 
